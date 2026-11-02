@@ -1,0 +1,1 @@
+# investnext-claude-plugin
