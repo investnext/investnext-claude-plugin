@@ -1,0 +1,16 @@
+{
+  "name": "investnext",
+  "description": "InvestNext plugins for Claude",
+  "owner": {
+    "name": "InvestNext",
+    "url": "https://www.investnext.com"
+  },
+  "plugins": [
+    {
+      "name": "investnext",
+      "source": "./",
+      "description": "Skills for working with InvestNext data through the InvestNext MCP connector: investor tearsheets, capital raise status reports, equity housekeeping, communications rosters, and branded HTML report rendering.",
+      "category": "productivity"
+    }
+  ]
+}

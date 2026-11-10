@@ -1,0 +1,45 @@
+/* InvestNext report brand. Inline into every kept HTML deliverable. */
+
+:root {
+  --in-primary-950: #0d236b;
+  --in-primary-900: #112e8f;
+  --in-primary-800: #153ab3;
+  --in-primary-700: #1945d7;
+  --in-primary-600: #315ce7;
+  --in-primary-500: #5578eb;
+  --in-primary-400: #6a89ed;
+  --in-primary-300: #809af0;
+  --in-primary-200: #95abf3;
+  --in-primary-100: #bfccf8;
+  --in-primary-50: #eaeefc;
+  --in-primary-25: #f5f7fe;
+
+  --in-grey-900: #09090b;
+  --in-grey-800: #24232d;
+  --in-grey-700: #2d2c39;
+  --in-grey-600: #363544;
+  --in-grey-500: #48465b;
+  --in-grey-400: #5a596b;
+  --in-grey-300: #6d6b7c;
+  --in-grey-200: #b5bac6;
+  --in-grey-100: #ced1d9;
+  --in-grey-50: #e6e8ec;
+  --in-grey-25: #f3f3f6;
+  --in-grey-10: #fcfcfd;
+  --in-white: #ffffff;
+
+  --in-destructive-700: #e6024e;
+  --in-destructive-50: #ffe6ee;
+  --in-warning-600: #fdac00;
+  --in-warning-ink: #916200;
+  --in-warning-50: #fff6e3;
+  --in-success-600: #19b0a0;
+  --in-success-50: #e0fbf8;
+
+  --in-font-ui: "Poppins", "Segoe UI", sans-serif;
+  --in-font-serif: "Source Serif 4", Georgia, serif;
+  --in-font-tabular: "Roboto", "SF Mono", ui-monospace, monospace;
+
+  --in-radius: 8px;
+  --in-rule: var(--in-grey-50);
+}

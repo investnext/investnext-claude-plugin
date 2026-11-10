@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Equity housekeeping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Source+Serif+4:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tokens.css" />
+  <link rel="stylesheet" href="report.css" />
+</head>
+<body>
+  <article class="page">
+    <header class="brand-bar">
+      <div class="brand">
+        <svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="16" fill="#EAEEFC"/>
+          <circle cx="16" cy="11" r="2.4" fill="#315CE7"/>
+          <circle cx="21.5" cy="13.5" r="2.1" fill="#315CE7"/>
+          <circle cx="10.5" cy="13.5" r="2.1" fill="#315CE7"/>
+          <circle cx="16" cy="16.5" r="2.6" fill="#5578EB"/>
+          <circle cx="11.4" cy="19.2" r="2.1" fill="#315CE7"/>
+          <circle cx="20.6" cy="19.2" r="2.1" fill="#315CE7"/>
+          <circle cx="16" cy="22.2" r="2.2" fill="#315CE7"/>
+        </svg>
+        InvestNext
+      </div>
+      <div class="brand-meta">Equity housekeeping · 28 Oct 2026</div>
+    </header>
+
+    <div class="head">
+      <h1>Equity housekeeping</h1>
+      <p class="subhead">Investor services · all active raises</p>
+      <p class="banner">Illustrative example — replace every name and figure with live InvestNext data. Do not copy these numbers.</p>
+    </div>
+
+    <div class="snap-stats">
+      <div class="tile">
+        <span class="label">Unfunded</span>
+        <span class="value">$1.2M</span>
+        <span class="sub">3 commitments</span>
+      </div>
+      <div class="tile">
+        <span class="label">Missing payment info</span>
+        <span class="value">2</span>
+        <span class="sub">no ACH or check on file</span>
+      </div>
+      <div class="tile">
+        <span class="label">On check</span>
+        <span class="value">1</span>
+        <span class="sub">still receiving checks</span>
+      </div>
+      <div class="tile">
+        <span class="label">Accreditation</span>
+        <span class="value">4</span>
+        <span class="sub">not current</span>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2>Unfunded — call these</h2>
+      <p class="lede">Committed capital that is not fully in, across every active raise.</p>
+      <div class="card table-card">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Contact</th>
+              <th>Raise</th>
+              <th>Account</th>
+              <th class="num">Committed</th>
+              <th class="num">Funded</th>
+              <th class="num">Unfunded</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Elena Vasquez</td>
+              <td>Harborview Class B</td>
+              <td>Vasquez Revocable Trust</td>
+              <td class="num">$250,000</td>
+              <td class="num"></td>
+              <td class="num">$250,000</td>
+            </tr>
+            <tr>
+              <td>Kenji Sato</td>
+              <td>Harborview Class B</td>
+              <td>Sato Family LLC</td>
+              <td class="num">$150,000</td>
+              <td class="num"></td>
+              <td class="num">$150,000</td>
+            </tr>
+            <tr>
+              <td>Priya Shah</td>
+              <td>Summit Industrial Fund I</td>
+              <td>Shah Revocable Trust</td>
+              <td class="num">$800,000</td>
+              <td class="num">$400,000</td>
+              <td class="num">$400,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Payment methods</h2>
+      <p class="lede">Accounts with a live position that have no distribution payment method, or still receive check. Last 4 only when the connector returns it — never a full account number.</p>
+      <div class="card table-card">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Contact</th>
+              <th>Account</th>
+              <th>Method</th>
+              <th>Last 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Luis Ortega</td>
+              <td>Ortega Holdings</td>
+              <td><span class="badge danger">Missing</span></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Amina Diop</td>
+              <td>Diop Family Trust</td>
+              <td><span class="badge danger">Missing</span></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Marcus Hale</td>
+              <td>Hale Revocable Trust</td>
+              <td><span class="badge warn">Check</span></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Accreditation to renew</h2>
+      <p class="lede">Accounts holding a live position whose accreditation is expired, pending, invalidated, or needs attention.</p>
+      <div class="card table-card">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Account</th>
+              <th>Contact</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sato Family LLC</td>
+              <td>Kenji Sato</td>
+              <td><span class="badge warn">Expired</span></td>
+            </tr>
+            <tr>
+              <td>Shah Revocable Trust</td>
+              <td>Priya Shah</td>
+              <td><span class="badge warn">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Ortega Holdings</td>
+              <td>Luis Ortega</td>
+              <td><span class="badge danger">Needs attention</span></td>
+            </tr>
+            <tr>
+              <td>Hale Revocable Trust</td>
+              <td>Marcus Hale</td>
+              <td><span class="badge warn">Expired</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Paperwork flags</h2>
+      <div class="card table-card">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Flag</th>
+              <th>Raise</th>
+              <th>Contact</th>
+              <th>Account</th>
+              <th class="num">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="badge danger">Needs attention</span></td>
+              <td>Harborview Class B</td>
+              <td>Elena Vasquez</td>
+              <td>Vasquez Revocable Trust</td>
+              <td class="num">$250,000</td>
+            </tr>
+            <tr>
+              <td><span class="badge warn">Funded, not signed</span></td>
+              <td>Summit Industrial Fund I</td>
+              <td>James Okonkwo</td>
+              <td>Okonkwo Holdings</td>
+              <td class="num">$100,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Quiet investors</h2>
+      <p class="lede">Active investors with no new deal or commitment in 90+ days. InvestNext does not expose a last-contacted date.</p>
+      <div class="card table-card">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Contact</th>
+              <th>Last activity</th>
+              <th class="num">Days quiet</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Amina Diop</td>
+              <td>12 Apr 2026</td>
+              <td class="num">199</td>
+            </tr>
+            <tr>
+              <td>Luis Ortega</td>
+              <td>03 Jun 2026</td>
+              <td class="num">147</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <p class="footnote">Illustrative example, not live InvestNext data. Payment-method rows are shape only — the connector may not return ACH vs check or last 4.</p>
+  </article>
+</body>
+</html>

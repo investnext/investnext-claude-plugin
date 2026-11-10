@@ -1,0 +1,27 @@
+{
+  "name": "investnext",
+  "displayName": "InvestNext",
+  "version": "0.1.0",
+  "description": "Skills for working with InvestNext data through the InvestNext MCP connector: investor tearsheets, capital raise status reports, equity housekeeping, communications rosters, and branded HTML report rendering.",
+  "author": {
+    "name": "InvestNext",
+    "url": "https://www.investnext.com"
+  },
+  "homepage": "https://www.investnext.com/platform/mcp/",
+  "repository": "https://github.com/investnext/investnext-claude-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "investnext",
+    "real-estate",
+    "private-equity",
+    "investor-relations",
+    "capital-raising",
+    "fundraising",
+    "mcp"
+  ],
+  "documentationUrl": "https://support.investnext.com/en/collections/19764241-mcp",
+  "supportUrl": "https://support.investnext.com/en/articles/17221309-connecting-investnext-mcp-to-claude",
+  "icon": "./.claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://www.investnext.com/legal/privacy-policy/",
+  "termsOfServiceUrl": "https://www.investnext.com/legal/terms-conditions/"
+}

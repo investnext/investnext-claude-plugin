@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Investor relations health</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Source+Serif+4:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --in-primary-900:#112e8f; --in-primary-700:#1945d7; --in-primary-600:#315ce7;
+  --in-primary-50:#eaeefc; --in-primary-25:#f5f7fe;
+  --in-grey-900:#09090b; --in-grey-800:#24232d; --in-grey-500:#48465b;
+  --in-grey-400:#5a596b; --in-grey-300:#6d6b7c; --in-grey-50:#e6e8ec;
+  --in-grey-25:#f3f3f6; --in-grey-10:#fcfcfd; --in-white:#ffffff;
+  --in-success-600:#19b0a0; --in-warning-ink:#916200; --in-warning-50:#fff6e3;
+  --in-destructive-700:#e6024e; --in-destructive-50:#ffe6ee;
+  --font:"Poppins","Segoe UI",sans-serif;
+  --serif:"Source Serif 4",Georgia,serif;
+  --tabular:"Roboto","SF Mono",ui-monospace,monospace;
+  --radius:8px;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--in-grey-10);color:var(--in-grey-500);font-family:var(--font);font-weight:400;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.page{max-width:1120px;margin:0 auto;padding:28px 20px 64px}
+.brand-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;padding-bottom:14px;border-bottom:1px solid var(--in-grey-50);font-size:13px}
+.brand{display:flex;align-items:center;gap:8px;color:var(--in-grey-900);font-weight:500}
+.brand-meta{color:var(--in-grey-300)}
+
+.ir{display:flex;flex-direction:column;gap:36px}
+.ir-head h1{font-family:var(--serif);font-weight:500;font-size:32px;letter-spacing:-.02em;color:var(--in-grey-900);margin:0}
+.ir-take{color:var(--in-grey-300);margin:8px 0 0;font-size:15px;line-height:1.5;max-width:52rem}
+.ir-take b{color:var(--in-grey-900);font-weight:500}
+.ir-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,10.5rem),1fr));gap:16px}
+.ir-card{background:var(--in-white);border:1px solid var(--in-grey-50);border-radius:var(--radius);padding:18px 20px;min-width:0}
+.ir-label{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--in-grey-300);font-weight:500}
+.ir-big{display:block;font-family:var(--serif);font-weight:500;font-size:28px;line-height:1.15;margin:8px 0 4px;font-variant-numeric:tabular-nums;color:var(--in-grey-900)}
+.ir-sub{font-size:12.5px;color:var(--in-grey-300)}
+.ir-section h2{font-size:18px;font-weight:500;color:var(--in-grey-900);margin:0 0 12px}
+.ir-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:16px}
+.ir-card h3{font-size:15px;font-weight:500;color:var(--in-grey-900);margin:0}
+.ir-note{font-size:12.5px;color:var(--in-grey-300);margin:6px 0 14px;line-height:1.45}
+.ir-scroll{max-height:22rem;overflow:auto}
+.ir-tbl{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;font-family:var(--tabular)}
+.ir-tbl th{text-align:left;font-weight:500;font-family:var(--font);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--in-grey-300);position:sticky;top:0;background:var(--in-white);padding:8px 10px;border-bottom:1px solid var(--in-grey-50);white-space:nowrap}
+.ir-tbl td{padding:9px 10px;border-bottom:1px solid var(--in-grey-50);vertical-align:top;font-family:var(--font)}
+.ir-tbl td.num,.ir-tbl th.num{text-align:right;white-space:nowrap;font-family:var(--tabular)}
+.ir-msg{font-size:13px;color:var(--in-grey-300);padding:10px 0}
+.ir-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.ir-chip{font:inherit;font-size:12.5px;border:1px solid var(--in-grey-50);background:var(--in-white);color:var(--in-grey-500);border-radius:999px;padding:4px 12px;cursor:pointer}
+.ir-chip[aria-pressed="true"]{background:var(--in-primary-700);color:var(--in-white);border-color:var(--in-primary-700)}
+.ir-t-unsigned{color:var(--in-destructive-700);font-weight:500}
+.ir-t-mismatch,.ir-t-owner{color:var(--in-warning-ink);font-weight:500}
+.ir-chart{position:relative;min-height:8rem}
+.ir-defs{font-size:13px;color:var(--in-grey-300);line-height:1.5;margin:0}
+.ir-defs dt{color:var(--in-grey-900);font-weight:500;margin-top:12px}
+.ir-defs dd{margin:2px 0 0}
+.callout{font-size:12.5px;color:var(--in-grey-300);margin-top:8px}
+@media print{body{background:#fff} .ir-card{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="brand-bar">
+    <div class="brand">
+      <svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="16" fill="#EAEEFC"/>
+        <circle cx="16" cy="11" r="2.4" fill="#315CE7"/>
+        <circle cx="21.5" cy="13.5" r="2.1" fill="#315CE7"/>
+        <circle cx="10.5" cy="13.5" r="2.1" fill="#315CE7"/>
+        <circle cx="16" cy="16.5" r="2.6" fill="#5578EB"/>
+        <circle cx="11.4" cy="19.2" r="2.1" fill="#315CE7"/>
+        <circle cx="20.6" cy="19.2" r="2.1" fill="#315CE7"/>
+        <circle cx="16" cy="22.2" r="2.2" fill="#315CE7"/>
+      </svg>
+      InvestNext
+    </div>
+    <div class="brand-meta">IR health · Demo sample · 28 Oct 2026</div>
+  </div>
+
+  <div class="ir">
+    <header class="ir-head">
+      <h1>Investor relations health</h1>
+      <p class="ir-take"><b>7</b> compliance flags and <b>$1.2M</b> in unfunded commitments need follow-up; <b>4</b> active investors have had no new activity in 90+ days.</p>
+    </header>
+
+    <section class="ir-tiles" aria-label="Headline figures">
+      <div class="ir-card"><div class="ir-label">Active investors</div><span class="ir-big">14</span><div class="ir-sub">People with a live position</div></div>
+      <div class="ir-card"><div class="ir-label">Repeat investors</div><span class="ir-big">93%</span><div class="ir-sub">13 of 14 investors in 2+ deals</div></div>
+      <div class="ir-card"><div class="ir-label">Quiet 90+ days</div><span class="ir-big">4</span><div class="ir-sub">Active, no new deal or commitment</div></div>
+      <div class="ir-card"><div class="ir-label">New contacts</div><span class="ir-big">0</span><div class="ir-sub">Added in the last 30 days</div></div>
+      <div class="ir-card"><div class="ir-label">Compliance flags</div><span class="ir-big">7</span><div class="ir-sub">Paperwork and record issues</div></div>
+      <div class="ir-card"><div class="ir-label">Accreditation to renew</div><span class="ir-big">11</span><div class="ir-sub">Active accounts, status not current</div></div>
+    </section>
+
+    <section class="ir-section">
+      <h2>Investor base</h2>
+      <div class="ir-grid">
+        <div class="ir-card">
+          <h3>Deals per investor</h3>
+          <p class="ir-note">Everyone who has contributed capital, by how many deals they’ve invested in.</p>
+          <div class="ir-chart">
+            <svg width="100%" viewBox="0 0 668 114" role="img" aria-label="Investors by number of deals">
+              <text x="0" y="19" dy="0.35em" fill="#6d6b7c" style="font-size:12px;font-family:Poppins,sans-serif">1 deal</text>
+              <text x="0" y="57" dy="0.35em" fill="#6d6b7c" style="font-size:12px;font-family:Poppins,sans-serif">2 deals</text>
+              <text x="0" y="95" dy="0.35em" fill="#6d6b7c" style="font-size:12px;font-family:Poppins,sans-serif">3+ deals</text>
+              <rect x="72" y="8" height="22" width="48" rx="4" fill="#1945d7"></rect>
+              <rect x="72" y="46" height="22" width="96" rx="4" fill="#1945d7"></rect>
+              <rect x="72" y="84" height="22" width="528" rx="4" fill="#1945d7"></rect>
+              <text x="128" y="19" dy="0.35em" fill="#09090b" style="font-size:12px;font-family:Roboto,sans-serif">1</text>
+              <text x="176" y="57" dy="0.35em" fill="#09090b" style="font-size:12px;font-family:Roboto,sans-serif">2</text>
+              <text x="608" y="95" dy="0.35em" fill="#09090b" style="font-size:12px;font-family:Roboto,sans-serif">11</text>
+            </svg>
+          </div>
+        </div>
+        <div class="ir-card">
+          <h3>Quiet investors</h3>
+          <p class="ir-note">Active investors whose latest deal entry or commitment is 90+ days old. InvestNext doesn’t expose a last-contacted date, so this tracks investment activity, not outreach.</p>
+          <div class="ir-scroll">
+            <table class="ir-tbl">
+              <thead><tr><th>Investor</th><th>Last activity</th><th class="num">Days quiet</th></tr></thead>
+              <tbody>
+                <tr><td>Marie Anderson</td><td>12 Apr 2026</td><td class="num">199</td></tr>
+                <tr><td>Francisco Rosales</td><td>28 May 2026</td><td class="num">153</td></tr>
+                <tr><td>Evan Haft</td><td>03 Jun 2026</td><td class="num">147</td></tr>
+                <tr><td>Jeffrey Thompson</td><td>18 Jul 2026</td><td class="num">102</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ir-section">
+      <h2>Pipeline</h2>
+      <div class="ir-grid">
+        <div class="ir-card">
+          <h3>New contacts, last 30 days</h3>
+          <p class="ir-note">Contacts created in the CRM. InvestNext doesn’t say whether a contact came from a form, an import or manual entry.</p>
+          <p class="ir-msg">No new contacts in the last 30 days.</p>
+        </div>
+        <div class="ir-card">
+          <h3>Unfunded commitments</h3>
+          <p class="ir-note">Committed but not yet received, per investor and raise. Includes capital not yet called.</p>
+          <div class="ir-scroll">
+            <table class="ir-tbl">
+              <thead><tr><th>Investor</th><th>Raise</th><th class="num">Committed</th><th class="num">Funded</th><th class="num">Unfunded</th></tr></thead>
+              <tbody>
+                <tr><td>Nicole Adams</td><td>Harborview Class B</td><td class="num">$250,000</td><td class="num">$0</td><td class="num">$250,000</td></tr>
+                <tr><td>Victoria Prescott</td><td>Summit Industrial Fund I</td><td class="num">$1,000,000</td><td class="num">$400,000</td><td class="num">$600,000</td></tr>
+                <tr><td>Amelia Earhart</td><td>Gulf Coast Workforce Housing Fund I</td><td class="num">$500,000</td><td class="num">$150,000</td><td class="num">$350,000</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ir-section">
+      <h2>Compliance</h2>
+      <div class="ir-card">
+        <h3>Paperwork and record flags</h3>
+        <p class="ir-note">Every commitment on every raise, checked each time the dashboard loads. In product this section is slow because each commitment is looked up individually.</p>
+        <div class="ir-chips" id="ir-chips" role="group" aria-label="Filter flags">
+          <button class="ir-chip" aria-pressed="true" data-f="all">All (7)</button>
+          <button class="ir-chip" aria-pressed="false" data-f="unsigned">Funded, not signed (3)</button>
+          <button class="ir-chip" aria-pressed="false" data-f="nodate">Signed, no date (2)</button>
+          <button class="ir-chip" aria-pressed="false" data-f="mismatch">Amount mismatch (1)</button>
+          <button class="ir-chip" aria-pressed="false" data-f="owner">Wrong contact (1)</button>
+        </div>
+        <div class="ir-scroll">
+          <table class="ir-tbl" id="tbl-flags">
+            <thead><tr><th>Flag</th><th>Raise</th><th>Investor</th><th>Account</th><th>Detail</th><th class="num">Amount</th></tr></thead>
+            <tbody>
+              <tr data-f="unsigned"><td class="ir-t-unsigned">Funded, not signed</td><td>Harborview Class B</td><td>Nicole Adams</td><td>Adams Equity, LLC</td><td>Paperwork In Progress</td><td class="num">$250,000</td></tr>
+              <tr data-f="unsigned"><td class="ir-t-unsigned">Funded, not signed</td><td>Summit Industrial Fund I</td><td>Victoria Prescott</td><td>StoneCreek Capital, LLC</td><td>Paperwork Needs Attention</td><td class="num">$400,000</td></tr>
+              <tr data-f="unsigned"><td class="ir-t-unsigned">Funded, not signed</td><td>Gulf Coast Workforce Housing Fund I</td><td>Brad St. Onge</td><td>Brad St. Onge</td><td>Paperwork Not Started</td><td class="num">$100,000</td></tr>
+              <tr data-f="nodate"><td>Signed, no date</td><td>Harborview Apartments</td><td>Michael Ballard</td><td>Ballard Family Trust</td><td>Complete, no completion date</td><td class="num">$670,694</td></tr>
+              <tr data-f="nodate"><td>Signed, no date</td><td>Summit Industrial Fund I</td><td>Jeffrey Thompson</td><td>Chicago Capital Group</td><td>Complete, no completion date</td><td class="num">$435,111</td></tr>
+              <tr data-f="mismatch"><td class="ir-t-mismatch">Amount mismatch</td><td>Harborview Apartments</td><td>Nicole Adams</td><td>Nicole Adams</td><td>Recorded $158,972 vs committed $150,000</td><td class="num">$8,972</td></tr>
+              <tr data-f="owner"><td class="ir-t-owner">Wrong contact</td><td>Gulf Coast Workforce Housing Fund I</td><td>Jeffrey Thompson</td><td>Chicago Capital Group</td><td>Account contact ≠ opportunity contact</td><td class="num">$87,210</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="ir-grid" style="margin-top:16px">
+        <div class="ir-card">
+          <h3>Accreditation to renew</h3>
+          <p class="ir-note">Accounts holding a live position whose accreditation is expired, pending, invalidated or needs attention.</p>
+          <div class="ir-scroll">
+            <table class="ir-tbl">
+              <thead><tr><th>Account</th><th>Investor</th><th>Status</th><th class="num">Current value</th></tr></thead>
+              <tbody>
+                <tr><td>StoneCreek Capital, LLC</td><td>Victoria Prescott</td><td>Expired</td><td class="num">$13,151,100</td></tr>
+                <tr><td>Earhart Family Trust</td><td>Amelia Earhart</td><td>Expired</td><td class="num">$10,500,454</td></tr>
+                <tr><td>Brad St. Onge</td><td>Brad St. Onge</td><td>Expired</td><td class="num">$2,631,100</td></tr>
+                <tr><td>Ballard Family Trust</td><td>Michael Ballard</td><td>Expired</td><td class="num">$670,694</td></tr>
+                <tr><td>Adams Equity, LLC</td><td>Nicole Adams</td><td>Expired</td><td class="num">$484,944</td></tr>
+                <tr><td>Chicago Capital Group</td><td>Jeffrey Thompson</td><td>Expired</td><td class="num">$435,111</td></tr>
+                <tr><td>Evan Haft</td><td>Evan Haft</td><td>Expired</td><td class="num">$196,080</td></tr>
+                <tr><td>Nicole Adams</td><td>Nicole Adams</td><td>Expired</td><td class="num">$158,972</td></tr>
+                <tr><td>Marie Anderson</td><td>Marie Anderson</td><td>Expired</td><td class="num">$109,622</td></tr>
+                <tr><td>Jeffrey Thompson</td><td>Jeffrey Thompson</td><td>Expired</td><td class="num">$87,210</td></tr>
+                <tr><td>Francisco Rosales</td><td>Francisco Rosales</td><td>Expired</td><td class="num">$4,000</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="ir-card">
+          <h3>Deals with no subscription records</h3>
+          <p class="ir-note">Deals where investors hold capital but no commitments exist in InvestNext, so there’s nothing to check paperwork against.</p>
+          <div class="ir-scroll">
+            <table class="ir-tbl">
+              <thead><tr><th>Deal</th><th class="num">Investors</th><th class="num">Contributed</th></tr></thead>
+              <tbody>
+                <tr><td>Legacy Park Side Letter</td><td class="num">3</td><td class="num">$420,000</td></tr>
+                <tr><td>Alto - Fund I (imported)</td><td class="num">8</td><td class="num">$2,150,000</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ir-section ir-card">
+      <h2>How these are counted</h2>
+      <dl class="ir-defs">
+        <dt>Active investor</dt><dd>A contact InvestNext marks active, meaning they hold at least one live position. People are counted once, however many accounts they invest through.</dd>
+        <dt>Repeat investor</dt><dd>Someone who has contributed capital to two or more different deals, out of everyone who has contributed to at least one.</dd>
+        <dt>Funded, not signed</dt><dd>Money is recorded against a commitment whose paperwork isn’t complete.</dd>
+        <dt>Signed, no date</dt><dd>Paperwork is marked complete but has no completion date.</dd>
+        <dt>Amount mismatch</dt><dd>A commitment shows more recorded than committed, a $0 commitment has money against it, or an investor’s recorded commitments in a deal don’t equal their position’s contributions.</dd>
+        <dt>Wrong contact</dt><dd>The account on a commitment belongs to a different contact than the opportunity.</dd>
+      </dl>
+      <p class="callout">Illustrative Demo sample. Quiet / unfunded / flags that failed to load in Monet’s live query are filled with Demo-shaped rows so the layout is visible. Accreditation table is from the Demo book as captured 28 Oct 2026.</p>
+    </section>
+  </div>
+</div>
+<script>
+document.getElementById("ir-chips").addEventListener("click", e => {
+  const b = e.target.closest("[data-f]"); if (!b) return;
+  [...e.currentTarget.children].forEach(x => x.setAttribute("aria-pressed", x === b ? "true" : "false"));
+  const f = b.dataset.f;
+  document.querySelectorAll("#tbl-flags tbody tr").forEach(tr => {
+    tr.style.display = (f === "all" || tr.dataset.f === f) ? "" : "none";
+  });
+});
+</script>
+</body>
+</html>
