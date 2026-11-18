@@ -9,7 +9,7 @@ Join **one InvestNext project (deal)** to **one communications system** and show
 
 The first move is always: **which system should I connect to?** Do not pull a CRM list or build the file until that is answered.
 
-**Read `investnext-data-model` before querying InvestNext.** Then read **`investnext-report-render`** and open `skills/investnext-report-render/references/example-communications-roster.html`. This skill owns the join; the render skill owns brand and how the file ships.
+**Read `investnext-data-model` before querying InvestNext.** Then read **`investnext-report-render`** and open `skills/investnext-report-render/references/example-communications-roster.html.txt`. This skill owns the join; the render skill owns brand and how the file ships.
 
 **Never invent a new layout.** Copy the example. Replace “ActiveCampaign” with the system they chose. Delete empty sections.
 
@@ -17,7 +17,7 @@ If this session has no `investnext:investnext-communications-roster` in the skil
 
 ## Output
 
-Canonical deliverable: one self-contained HTML **file** at `outputs/<project-slug>-communications-roster.html`. Follow **`investnext-report-render`**: inline `tokens.css` + `report.css` + logomark, keep `<!DOCTYPE html>`, no JavaScript, no artifact, no dark mode.
+Canonical deliverable: one self-contained HTML **file** at `outputs/<project-slug>-communications-roster.html`. Follow **`investnext-report-render`**: inline `tokens.css.txt` + `report.css.txt` + logomark, keep `<!DOCTYPE html>`, no JavaScript, no artifact, no dark mode.
 
 **Omit empty.** Never "N/A" or a bare dash.
 
@@ -73,7 +73,7 @@ Do not dump the full “in both” roster unless they ask; the counts in snap st
 2. **Resolve the project.** List/search projects. If 2+ match, ask. Retrieve positions (page if needed) → account → contact (name, email).
 3. **Pull the other side.** Connector list/tag they named, or the pasted file. If the connector needs a list picker, ask.
 4. **Join** with the match rules. Cap a huge book and say so.
-5. **Render.** Copy `example-communications-roster.html`. Swap the CRM label everywhere. Inline tokens + CSS. Delete unused sections. Do not publish as a claude.ai page.
+5. **Render.** Copy `example-communications-roster.html.txt`. Swap the CRM label everywhere. Inline tokens + CSS. Delete unused sections. Do not publish as a claude.ai page.
 
 ## Design rules
 
@@ -86,6 +86,6 @@ Do not dump the full “in both” roster unless they ask; the counts in snap st
 ## Related
 
 - `investnext-data-model` — required before querying
-- `investnext-report-render` — brand + `example-communications-roster.html`
+- `investnext-report-render` — brand + `example-communications-roster.html.txt`
 - `investnext-investor-tearsheet` — one person, optional other-systems join
 - `investnext-ir-health` — firm-wide equity housekeeping, not a CRM join

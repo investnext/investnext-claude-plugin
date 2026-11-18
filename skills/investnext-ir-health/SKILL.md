@@ -9,17 +9,17 @@ A **firm-wide** Friday snapshot for investor services: who to call, what is unsi
 
 This is the same job as a capital-raise status report, across every active raise — not a live dashboard and not Monet’s artifact mock.
 
-**Read `investnext-data-model` before querying.** Then read **`investnext-report-render`** and open `skills/investnext-report-render/references/example-equity-housekeeping.html`. This skill owns content; the render skill owns brand and how the file ships.
+**Read `investnext-data-model` before querying.** Then read **`investnext-report-render`** and open `skills/investnext-report-render/references/example-equity-housekeeping.html.txt`. This skill owns content; the render skill owns brand and how the file ships.
 
 **Never invent a new layout.** Thin data still copies the example: same section order, same classes. Delete empty sections. Do not redesign.
 
-Do **not** publish `references/legacy-artifact-dashboard.html` (or any artifact). That file is a retired mock.
+Do **not** publish an artifact.
 
 If this session has no `investnext:investnext-ir-health` in the skill list, **keep going**: read this `SKILL.md` and the render skill’s example from the plugin folder.
 
 ## Output
 
-Canonical deliverable: one self-contained HTML **file** at `outputs/equity-housekeeping.html`. Follow **`investnext-report-render`**: inline `tokens.css` + `report.css` + logomark, keep `<!DOCTYPE html>`, no JavaScript, no artifact, no dark mode. Print-from-file is the export path.
+Canonical deliverable: one self-contained HTML **file** at `outputs/equity-housekeeping.html`. Follow **`investnext-report-render`**: inline `tokens.css.txt` + `report.css.txt` + logomark, keep `<!DOCTYPE html>`, no JavaScript, no artifact, no dark mode. Print-from-file is the export path.
 
 **Omit empty** — never "None on file", "N/A", a bare dash, or "no amount set". Drop the row or section instead.
 
@@ -61,7 +61,7 @@ Map each to the example's primitives (`.brand-bar`, `.head`, `.snap-stats`, `.ca
 3. **Accounts.** From those commitments and from contact/account retrieves: `accreditation_status`, any payment-method field. Filter to accounts that still hold a live position when you can.
 4. **Payment methods.** If MCP has no type / last-4, ask once about a payment report; do not block the rest of the file on that answer.
 5. **Quiet.** From commitment `created` or position activity dates only. Do not invent outreach dates.
-6. **Render.** Copy `investnext-report-render/references/example-equity-housekeeping.html` into `outputs/equity-housekeeping.html`. Inline `tokens.css` and `report.css`. Delete unused sections/columns. Do not publish as a claude.ai page.
+6. **Render.** Copy `investnext-report-render/references/example-equity-housekeeping.html.txt` into `outputs/equity-housekeeping.html`. Inline `tokens.css.txt` and `report.css.txt`. Delete unused sections/columns. Do not publish as a claude.ai page.
 
 ## Design rules
 
@@ -75,7 +75,7 @@ Map each to the example's primitives (`.brand-bar`, `.head`, `.snap-stats`, `.ca
 ## Related
 
 - `investnext-data-model` — required before querying
-- `investnext-report-render` — brand + `example-equity-housekeeping.html`
+- `investnext-report-render` — brand + `example-equity-housekeeping.html.txt`
 - `investnext-capital-raise-status-report` — one raise, including that raise’s unfunded call list
 - `investnext-communications-roster` — deal roster vs a CRM/ESP list
 - `investnext-investor-tearsheet` — one-LP meeting prep

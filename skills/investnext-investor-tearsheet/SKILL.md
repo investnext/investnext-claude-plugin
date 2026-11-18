@@ -9,7 +9,7 @@ Acts as an IR associate prepping the managing partner for an LP or prospect meet
 
 GPs ask for this document under many names. Treat all of these as **this skill** (same example layout): tearsheet, tear sheet, LP tearsheet, investor tearsheet, one-pager / one pager on an investor, fact sheet (when it is about a person / LP, not a fund marketing piece), investor snapshot, LP snapshot, investor brief, LP brief, meeting brief, meeting prep, investor prep sheet, investor briefing, relationship brief, cheat sheet, leave-behind, holdings summary, "what should I know about [name]", QBR / quarterly or annual review. A capital-account statement / PCAP / CAS / K-1 is **not** this skill — use `investnext-report-render` generic collateral instead.
 
-**Read `investnext-data-model` before querying.** Then read **`investnext-report-render`** and open `skills/investnext-report-render/references/example-tearsheet.html`. This skill owns content and section rules; the render skill owns brand, tokens, and how the file ships.
+**Read `investnext-data-model` before querying.** Then read **`investnext-report-render`** and open `skills/investnext-report-render/references/example-tearsheet.html.txt`. This skill owns content and section rules; the render skill owns brand, tokens, and how the file ships.
 
 **Never invent a new layout.** Thin CRM, missing notes, or a “positions-only” run still copies the example: same section order, same classes (`.brand-bar`, `.head`, `.snap-stats`, `.card`, `table.data`, `.badge`, `.hist`, `.kv`). Delete empty sections. Do not redesign.
 
@@ -17,7 +17,7 @@ If this session has no `investnext:investnext-investor-tearsheet` in the skill l
 
 ## Output
 
-Canonical deliverable: one self-contained HTML **file** at `outputs/<contact-slug>-tearsheet.html`. Follow **`investnext-report-render`**: inline `tokens.css` + `report.css` + logomark, keep `<!DOCTYPE html>`, no JavaScript, no artifact, no dark mode. Print-from-file is the export path. Share that file (or a PDF printed from it).
+Canonical deliverable: one self-contained HTML **file** at `outputs/<contact-slug>-tearsheet.html`. Follow **`investnext-report-render`**: inline `tokens.css.txt` + `report.css.txt` + logomark, keep `<!DOCTYPE html>`, no JavaScript, no artifact, no dark mode. Print-from-file is the export path. Share that file (or a PDF printed from it).
 
 Match the example: brand bar, title, snap stats, then only the sections that have data. **Omit empty** — never "None on file", "N/A", a bare dash, "No positions yet", or "no amount set". Drop the row or clause instead.
 
@@ -76,7 +76,7 @@ Map each to the example's primitives (`.brand-bar`, `.head`, `.snap-stats`, `.ca
    - Never add a source the user declined.
 7. **Infer variant.** Probe if the shape is thin.
 8. **Web research (optional, bounded).** Org news last 90 days, public role. Never personal information. Never paid enrichment. Label public facts `· public`.
-9. **Render.** Copy `investnext-report-render/references/example-tearsheet.html` into `outputs/<contact-slug>-tearsheet.html`. Inline `tokens.css` and `report.css` from that skill (the example links them; the deliverable must be self-contained). Replace names/numbers, delete unused sections/columns. Same input → same section order. Do not publish as a claude.ai page.
+9. **Render.** Copy `investnext-report-render/references/example-tearsheet.html.txt` into `outputs/<contact-slug>-tearsheet.html`. Inline `tokens.css.txt` and `report.css.txt` from that skill (the example links them; the deliverable must be self-contained). Replace names/numbers, delete unused sections/columns. Same input → same section order. Do not publish as a claude.ai page.
 
 ## Design rules
 
@@ -100,7 +100,7 @@ Map each to the example's primitives (`.brand-bar`, `.head`, `.snap-stats`, `.ca
 ## Related
 
 - `investnext-data-model` — required before querying
-- `investnext-report-render` — brand + `example-tearsheet.html`
+- `investnext-report-render` — brand + `example-tearsheet.html.txt`
 - `investnext-capital-raise-status-report` — GP-side status on one raise; this skill is LP meeting prep
 - `investnext-ir-health` — firm-wide equity housekeeping
 - `investnext-communications-roster` — deal roster vs a CRM/ESP list; this skill is one person
