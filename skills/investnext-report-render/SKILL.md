@@ -14,7 +14,9 @@ Two principles:
 1. **Examples drive layout; this skill drives the invariants.** Match the reference render for the report type. Then apply the conventions below (semantic color, money, dates, light page, no empty states).
 2. **The body is authored once.** Same markup for a file. Do not publish a claude.ai artifact for static reports (tearsheet, status report, equity housekeeping, communications roster, statements, one-pagers). Artifact exceptions: property report studio and investor portal demo — those consumer skills say so.
 
-If this session has no `investnext:investnext-report-render` in the skill list, **keep going**: read this `SKILL.md`, `references/tokens.css`, and `references/report.css` from the plugin folder (`skills/investnext-report-render/`). Desktop / Cowork local installs often omit the plugin namespace.
+If this session has no `investnext:investnext-report-render` in the skill list, **keep going**: read this `SKILL.md`, `references/tokens.css.txt`, and `references/report.css.txt` from the plugin folder (`skills/investnext-report-render/`). Desktop / Cowork local installs often omit the plugin namespace.
+
+Reference files end in `.txt` because the plugin directory only accepts text, Markdown, JSON, YAML and raster images. The content is plain CSS, HTML or SVG: drop the `.txt` when you reason about the file type, and never ship a `.txt` file as the deliverable.
 
 ## When to apply (default brand)
 
@@ -30,17 +32,17 @@ Apply this design system to any shareable / print collateral built from InvestNe
 
 | User intent | Content skill | Open |
 | --- | --- | --- |
-| Person / LP / prospect meeting prep (tearsheet, tear sheet, one-pager, fact sheet, investor snapshot, LP snapshot, investor brief, meeting brief, meeting prep, investor prep sheet, cheat sheet, leave-behind, "what should I know about [LP]") | `investnext-investor-tearsheet` | `example-tearsheet.html` |
-| One raise's progress / pipeline / close (status report, progress report, fundraising dashboard, pipeline report, raise update, offering status) | `investnext-capital-raise-status-report` | `example-status-report.html` |
-| Firm-wide equity housekeeping / Friday checklist / missing ACH / accreditation (not one raise) | `investnext-ir-health` | `example-equity-housekeeping.html` |
-| Deal roster vs CRM/ESP list (ActiveCampaign, HubSpot, GoHighLevel, …) | `investnext-communications-roster` | `example-communications-roster.html` |
+| Person / LP / prospect meeting prep (tearsheet, tear sheet, one-pager, fact sheet, investor snapshot, LP snapshot, investor brief, meeting brief, meeting prep, investor prep sheet, cheat sheet, leave-behind, "what should I know about [LP]") | `investnext-investor-tearsheet` | `example-tearsheet.html.txt` |
+| One raise's progress / pipeline / close (status report, progress report, fundraising dashboard, pipeline report, raise update, offering status) | `investnext-capital-raise-status-report` | `example-status-report.html.txt` |
+| Firm-wide equity housekeeping / Friday checklist / missing ACH / accreditation (not one raise) | `investnext-ir-health` | `example-equity-housekeeping.html.txt` |
+| Deal roster vs CRM/ESP list (ActiveCampaign, HubSpot, GoHighLevel, …) | `investnext-communications-roster` | `example-communications-roster.html.txt` |
 | Quarterly property / investor packet builder | `investnext-property-report-studio` | that skill's `studio.html` (artifact; still these tokens) |
 | Investor / LP portal walkthrough | `investnext-investor-portal` | that skill's `portal.html` (artifact; still these tokens) |
 | Other report / PDF / statement | this skill only | closest example; compose from primitives |
 
 ### Generic collateral (no matching consumer skill)
 
-Still inline `tokens.css` + `report.css` + logomark. Compose from existing primitives. Person-centric → tearsheet example; raise-centric → status example; otherwise assemble `.brand-bar`, `.head`, `.snap-stats`, `.card`, `.kv`, `table.data`. Title the page with the user's words. Brand-bar right: `{their document name} · DD Mmm YYYY`.
+Still inline `tokens.css.txt` + `report.css.txt` + logomark. Compose from existing primitives. Person-centric → tearsheet example; raise-centric → status example; otherwise assemble `.brand-bar`, `.head`, `.snap-stats`, `.card`, `.kv`, `table.data`. Title the page with the user's words. Brand-bar right: `{their document name} · DD Mmm YYYY`.
 
 Do **not** generate a Schedule K-1, tax form, subscription booklet, or ILPA capital-call / distribution notice. If they asked for an "investor statement", capital account statement, PCAP, or CAS, render a branded **holdings snapshot** from InvestNext positions and metrics (paid-in, distributions, capital account, IRR, equity multiple). Do not title it as an official GAAP PCAP or tax statement.
 
@@ -50,10 +52,10 @@ Do **not** generate a Schedule K-1, tax form, subscription booklet, or ILPA capi
 
 | Report type | Reference (this skill) |
 | --- | --- |
-| Investor tearsheet (and synonyms above) | `references/example-tearsheet.html` |
-| Capital raise status report | `references/example-status-report.html` |
-| Equity housekeeping / IR health | `references/example-equity-housekeeping.html` |
-| Communications roster | `references/example-communications-roster.html` |
+| Investor tearsheet (and synonyms above) | `references/example-tearsheet.html.txt` |
+| Capital raise status report | `references/example-status-report.html.txt` |
+| Equity housekeeping / IR health | `references/example-equity-housekeeping.html.txt` |
+| Communications roster | `references/example-communications-roster.html.txt` |
 | Other shareable report / statement / PDF | Closest of the examples; then primitives |
 
 Match structure, classes, spacing, and composition. The example is shape, not a cap on rows. Omit fields with no data; never drop live data because the example showed one row.
@@ -65,9 +67,9 @@ New sections are allowed if composed from existing primitives (`.brand-bar`, `.h
 Self-contained output: one HTML **file**. Inline, in order:
 
 1. Google Fonts for Poppins 400/500, Source Serif 4 500, Roboto 400/500
-2. `references/tokens.css`
-3. `references/report.css`
-4. The cluster logomark from `references/logomark.svg` (20×20) in `.brand`
+2. `references/tokens.css.txt`
+3. `references/report.css.txt`
+4. The cluster logomark from `references/logomark.svg.txt` (20×20) in `.brand`
 
 Do not `@import`. Do not add `@media (prefers-color-scheme: dark)` or `data-theme`. Light page only. Keep `print-color-adjust: exact`.
 

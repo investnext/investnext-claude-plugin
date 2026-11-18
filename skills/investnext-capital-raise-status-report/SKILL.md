@@ -11,7 +11,7 @@ Lead with the raise’s totals, then funnel buckets from opportunity `stage` + `
 
 InvestNext has no subscription stepper and no data-room views. Do not invent either. Use paperwork and funding statuses.
 
-**Read `investnext-data-model` before querying.** Then read **`investnext-report-render`** and open `skills/investnext-report-render/references/example-status-report.html`. This skill owns content and section rules; the render skill owns brand, tokens, and how the file ships.
+**Read `investnext-data-model` before querying.** Then read **`investnext-report-render`** and open `skills/investnext-report-render/references/example-status-report.html.txt`. This skill owns content and section rules; the render skill owns brand, tokens, and how the file ships.
 
 **Never invent a new layout.** Thin data still copies the example: same section order, same classes. Delete empty sections. Do not redesign.
 
@@ -19,7 +19,7 @@ If this session has no `investnext:investnext-capital-raise-status-report` in th
 
 ## Output
 
-Canonical deliverable: one self-contained HTML **file** at `outputs/<raise-slug>-status-report.html`. Follow **`investnext-report-render`**: inline `tokens.css` + `report.css` + logomark, keep `<!DOCTYPE html>`, no JavaScript, no artifact, no dark mode. Print-from-file is the export path.
+Canonical deliverable: one self-contained HTML **file** at `outputs/<raise-slug>-status-report.html`. Follow **`investnext-report-render`**: inline `tokens.css.txt` + `report.css.txt` + logomark, keep `<!DOCTYPE html>`, no JavaScript, no artifact, no dark mode. Print-from-file is the export path.
 
 **Omit empty** — never "None on file", "N/A", a bare dash, or "no amount set". Drop the row or section instead.
 
@@ -92,7 +92,7 @@ Map each to the example's primitives (`.brand-bar`, `.head`, `.snap-stats`, `.ca
 2. **List opportunities** on that raise. Page if `count` exceeds the page.
 3. **Retrieve** each in-flight opportunity (or the page the GP cares about) for `stage`, `paperwork_status`, `funding_status`, `committed_amount`, `recorded_amount`, `expected_amount`, `commitments`, `primary_contact`. Cap a huge roster and say so.
 4. **Commitments** only when one opportunity has several vehicles and paperwork might differ — retrieve those commitments.
-5. **Bucket, fill the example.** Copy `investnext-report-render/references/example-status-report.html` into the outputs path. Inline `tokens.css` and `report.css` from that skill. Delete unused sections/columns. Do not publish as a claude.ai page.
+5. **Bucket, fill the example.** Copy `investnext-report-render/references/example-status-report.html.txt` into the outputs path. Inline `tokens.css.txt` and `report.css.txt` from that skill. Delete unused sections/columns. Do not publish as a claude.ai page.
 
 ## Design rules
 
@@ -104,7 +104,7 @@ Map each to the example's primitives (`.brand-bar`, `.head`, `.snap-stats`, `.ca
 ## Related
 
 - `investnext-data-model` — required before querying
-- `investnext-report-render` — brand + `example-status-report.html`
+- `investnext-report-render` — brand + `example-status-report.html.txt`
 - `investnext-investor-tearsheet` — LP meeting prep; this skill is GP-side on one raise
 - `investnext-ir-health` — firm-wide equity housekeeping; this skill stays one raise
 - `investnext-property-report-studio` — interactive quarterly packet builder (artifact); not a substitute for this status report
